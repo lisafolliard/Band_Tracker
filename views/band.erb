@@ -23,11 +23,11 @@
 <% if @band.venues().any?() %>
 <h3>Here are all the venues for this band:</h3>
 
-<ul>
-  <% @band.venues().each() do |venue| %>
-    <li><%= venue.location() %></li>
-  <% end %>
-</ul>
+  <ul>
+    <% @band.venues().each() do |venue| %>
+      <li><%= venue.location() %></li>
+    <% end %>
+  </ul>
 
 <% else %>
   <p>Uh-oh! This band does not have any venues yet</p>

@@ -1,5 +1,5 @@
-  <div class="container">
-    <h1>The Bands I Saw</h1>
+<div class="container">
+  <h1>The Bands I Saw</h1>
 
     <form action="/bands" method='post'>
       <div class='form-group'>
@@ -9,7 +9,7 @@
 
       <button type='submit' class='btn btn-primary btn-md'>Add!</button>
     </form>
-  </div>
+</div>
 
 </br>
 
@@ -20,13 +20,13 @@
     <th>Delete</th>
   </tr>
 
-    <% if @bands %>
-      <% @bands.each do |band| %>
-        <tr>
-          <td><a href='/bands/<%= band.id %>'><%= band.name %></a></td>
-          <td><a href='/bands/<%= band.id %>/edit'>Edit</a></td>
-          <td><a href='/bands/<%= band.id %>/delete'>Delete</a></td>
-        </tr>
-      <% end %>
+  <% if @bands %>
+    <% @bands.each do |band| %>
+      <tr>
+        <td><a href='/bands/<%= band.id %>'><%= band.name %></a></td>
+        <td><a href='/bands/<%= band.id %>/edit'>Edit</a></td>
+        <td><a href='/bands/<%= band.id %>/delete'>Delete</a></td>
+      </tr>
     <% end %>
+  <% end %>
 </table>

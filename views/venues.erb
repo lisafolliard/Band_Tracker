@@ -7,8 +7,7 @@
       <label for="description">Add a new venue:</label>
       <input type="text" class="form-control" name="location" placeholder="e.g. Red Rocks">
     </div>
-
-    <button type="submit" class="btn btn-primary btn-md">Add!</button>
+      <button type="submit" class="btn btn-primary btn-md">Add!</button>
   </form>
 </div>
 
@@ -20,9 +19,9 @@
   </tr>
     <% if @venues %>
       <% @venues.each do |venue| %>
-    <tr>
-      <td><%= venue.location %></td>
-    </tr>
+        <tr>
+          <td><%= venue.location %></td>
+        </tr>
       <% end %>
     <% end %>
 </table>
