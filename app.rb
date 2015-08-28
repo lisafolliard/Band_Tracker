@@ -23,6 +23,13 @@ get('/bands/:id/edit') do
   erb(:band_edit)
 end
 
+get('/bands/:id/delete') do
+  band = Band.find(params['id'].to_i)
+  @bands = Band.all()
+  band.destroy
+  erb(:bands)
+end
+
 patch('/bands') do
   name = params.fetch('name')
   id = params.fetch('id').to_i()
@@ -30,4 +37,22 @@ patch('/bands') do
   band.update({:name => name})
   @bands = Band.all()
   erb(:bands)
+end
+
+get('/bands/:id') do
+  @band = Band.find(params.fetch('id').to_i)
+  @venues = Venue.all()
+  erb(:band)
+end
+
+get('/venues') do
+  @venues = Venue.all()
+  erb(:venues)
+end
+
+post('/venues') do
+  location = params.fetch('location')
+  @venue = Venue.create({:location => location})
+  @venues = Venue.all()
+  erb(:venues)
 end
