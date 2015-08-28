@@ -1,8 +1,9 @@
 .lf-background {
-  /*background: url('Outdoor-concert.jpg') no-repeat center center fixed;*/
-  /*background-size: cover;*/
-  /*text-align: center;*/
+  background: url('concert.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
 }
+
  h1 {
    color: red;
    font-family: 'Amatic SC';
@@ -16,7 +17,7 @@
 
 .jumbotron {
   color: red;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Verdana';
   text-align: center;
   /*background: rgba(255, 254, 255, 0.6);*/
   /*text-align: center;*/

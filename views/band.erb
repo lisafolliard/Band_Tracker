@@ -1,6 +1,6 @@
 <h1><%= @band.name() %></h1>
 
-<h3>Select all venues where this band has played:</h3>
+<h3>Select the venues where this band has played:</h3>
 
 <% if @venues.any?() %>
   <form action="/bands/<%= @band.id %>" method="post">

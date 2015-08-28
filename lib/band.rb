@@ -6,6 +6,6 @@ class Band < ActiveRecord::Base
 private
 
   define_method(:capitalize_letter) do
-    self.name=name().capitalize()
+    self.name=name().titlecase()
   end
 end

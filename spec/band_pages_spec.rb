@@ -12,7 +12,7 @@ end
 describe('path to view details of a particular band', :type => :feature) do
   it('select and view venues for a specific band') do
     visit('/bands')
-    click_link('Juniors')
-    expect(page).to have_content('Juniors')
+    click_link('Smiths')
+    expect(page).to have_content('Smiths')
   end
 end

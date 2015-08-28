@@ -6,6 +6,6 @@ class Venue < ActiveRecord::Base
 private
 
   define_method(:capitalize_location) do
-    self.location=location().capitalize()
+    self.location=location().titlecase()
   end
 end
