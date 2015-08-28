@@ -13,7 +13,10 @@ describe(Band) do
     end
   end
 
-
+    it("validates the presence of a name") do
+      band = Band.create({:name => ""})
+      expect(band.save()).to(eq(false))
+    end
 
 
 end
