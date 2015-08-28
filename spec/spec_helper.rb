@@ -13,10 +13,10 @@ require('./app')
 
 RSpec.configure do |config|
   config.after(:each) do
-    band.all().each do |band|
+    Band.all().each do |band|
       band.destroy()
     end
-    venue.all().each do |venue|
+    Venue.all().each do |venue|
       venue.destroy()
     end
   end
