@@ -18,8 +18,8 @@ describe(Band) do
       expect(band.save()).to(eq(false))
     end
 
-    it('capitalizes the first letter of a band name') do
+    it('capitalizes all letters of a band name') do
       band = Band.create({:name => 'the frogs'})
-      expect(band.name).to(eq('The frogs'))
+      expect(band.name).to(eq('The Frogs'))
     end
 end

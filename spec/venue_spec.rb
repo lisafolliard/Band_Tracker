@@ -6,8 +6,8 @@ describe(Venue) do
     expect(venue.save()).to(eq(false))
   end
 
-  it('capitalizes the first letter of a venue location') do
+  it('capitalizes all letters of a venue location') do
     venue = Venue.create({:location => 'green theatre'})
-    expect(venue.location()).to(eq('Green theatre'))
+    expect(venue.location()).to(eq('Green Theatre'))
   end
 end
