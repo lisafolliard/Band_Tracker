@@ -1,15 +1,40 @@
 .lf-background {
-  background: url('Outdoor-concert.jpg') no-repeat center center fixed;*/
-  background-size: cover;
+  /*background: url('Outdoor-concert.jpg') no-repeat center center fixed;*/
+  /*background-size: cover;*/
   /*text-align: center;*/
 }
-
+ h1 {
+   color: red;
+   font-family: 'Amatic SC';
+   text-align: center;
+   font-size: 60px;
+ }
 /*.sadmilk {
   background: url('sadmilk.jpg') no-repeat center center fixed;
   background-size: cover;
 }*/
 
 .jumbotron {
+  color: red;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
   /*background: rgba(255, 254, 255, 0.6);*/
   /*text-align: center;*/
+}
+
+
+body {
+  background: url('/img/minty.jpg');
+}
+
+
+.box {
+
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10%;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+  padding: 20px;
+  border-radius: 25px;
+
 }

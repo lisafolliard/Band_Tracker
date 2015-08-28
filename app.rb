@@ -45,6 +45,18 @@ get('/bands/:id') do
   erb(:band)
 end
 
+patch('/bands/:id') do
+  band_id = params.fetch('id').to_i()
+  @band = Band.find(band_id)
+  venue_ids = params.fetch('venue_id')
+  venue_ids.each() do |venue_id|
+    new_venue = Venue.find(venue_id)
+    @band.venues.push(new_venue)
+  end
+  @venues = Venue.all()
+  erb(:band)
+end
+
 get('/venues') do
   @venues = Venue.all()
   erb(:venues)

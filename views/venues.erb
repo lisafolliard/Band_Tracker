@@ -17,15 +17,15 @@
 
 </br>
 
-<table class="table">
-  <tr>
-    <th>Venue Location</th>
-  </tr>
-      <% if @venues %>
-        <% @venues.each do |venue| %>
-          <tr>
-            <td><a href="/venues/<%= venue.id %>"><%= venue.location %></a></td>
-          </tr>
+  <table class="table">
+    <tr>
+      <th>Venue Location</th>
+    </tr>
+        <% if @venues %>
+          <% @venues.each do |venue| %>
+            <tr>
+              <td><%= venue.location %></td>
+            </tr>
+          <% end %>
         <% end %>
-      <% end %>
-</table>
+  </table>
