@@ -13,10 +13,13 @@ describe(Band) do
     end
   end
 
-    it("validates the presence of a name") do
+    it('validates the presence of a name') do
       band = Band.create({:name => ""})
       expect(band.save()).to(eq(false))
     end
 
-
+    it('capitalizes the first letter of a band name') do
+      band = Band.create({:name => 'the frogs'})
+      expect(band.name).to(eq('The frogs'))
+    end
 end
