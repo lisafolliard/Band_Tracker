@@ -1,0 +1,35 @@
+<body class='lf-background'>
+
+  <div class="container">
+    <h1>My Bands</h1>
+
+    <form action="/bands" method='post'>
+      <div class='form-group'>
+        <label for="name">Add a new band:</label>
+        <input type="text" class='form-control' name="name" placeholder="e.g. The Rockers">
+      </div>
+
+      <button type='submit' class='btn btn-primary btn-md'>Add!</button>
+    </form>
+  </div>
+</body>
+
+</br>
+
+<table class="table">
+  <tr>
+    <th>Band Name</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+
+    <% if @bands %>
+      <% @bands.each do |band| %>
+        <tr>
+          <td><a href='/bands/<%= band.id %>'><%= band.name %></a></td>
+          <td><a href='/bands/<%= band.id %>/edit'>Edit</a></td>
+          <td><a href='/bands/<%= band.id %>/delete'>Delete</a></td>
+        </tr>
+      <% end %>
+    <% end %>
+</table>

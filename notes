@@ -1,0 +1,4 @@
+<td><a href='/bands/<%= recipe.id %>'><%= band.name %></a></td>
+
+<td><a href='/bands/<%= recipe.id %>/edit'>Edit</a></td>
+<td><a href='/bands/<%= recipe.id %>/delete'>Delete</a></td>
