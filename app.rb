@@ -15,7 +15,11 @@ post('/bands') do
   name = params.fetch('name')
   @band = Band.create({:name => name})
   @bands = Band.all()
-  erb(:bands)
+  if @band.save()
+    erb(:bands)
+  else
+    erb(:band_errors)
+  end
 end
 
 get('/bands/:id/edit') do
@@ -66,5 +70,9 @@ post('/venues') do
   location = params.fetch('location')
   @venue = Venue.create({:location => location})
   @venues = Venue.all()
-  erb(:venues)
+  if @venue.save()
+    erb(:venues)
+  else
+    erb(:venue_errors)
+  end
 end

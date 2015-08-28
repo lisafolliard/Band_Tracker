@@ -9,9 +9,10 @@ describe('path to view all bands page', :type => :feature) do
   end
 end
 
-# describe('path to view details of a particular band', :type => :feature) do
-#   it('select and view venues for a specific band') do
-#     visit('/bands')
-#
-#   end
-# end
+describe('path to view details of a particular band', :type => :feature) do
+  it('select and view venues for a specific band') do
+    visit('/bands')
+    click_link('Juniors')
+    expect(page).to have_content('Juniors')
+  end
+end

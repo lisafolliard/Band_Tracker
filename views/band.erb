@@ -1,6 +1,6 @@
 <h1><%= @band.name() %></h1>
 
-<h3>Select all ingredients that are in this recipe:</h3>
+<h3>Select all venues where this band has played:</h3>
 
 <% if @venues.any?() %>
   <form action="/bands/<%= @band.id %>" method="post">
@@ -14,14 +14,14 @@
       </div>
     <% end %>
 
-    <button type="submit">Add ingredients!</button>
+    <button type="submit">Add venues!</button>
   </form>
 <% end %>
 
 <br>
 
 <% if @band.venues().any?() %>
-<h3>Here are all the ingredients in this recipe:</h3>
+<h3>Here are all the venues for this band:</h3>
 
 <ul>
   <% @band.venues().each() do |venue| %>
@@ -30,7 +30,7 @@
 </ul>
 
 <% else %>
-  <p>Uh-oh! There are no ingredients yet!</p>
+  <p>Uh-oh! This band does not have any venues yet</p>
 <% end %>
 
-<a href="/">Return to Cookbook Home</a>
+<a href="/">Return to Home</a>
