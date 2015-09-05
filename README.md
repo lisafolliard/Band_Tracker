@@ -18,19 +18,19 @@ Users can:
 
 ## Setup
 
-* Clone this repository to your local system
+Clone this repository to your local system
 
-* Utilize ActiveRecord to get database up and running
+Utilize ActiveRecord to get database up and running
 
-* run the following commands in project folder
+run the following commands in project folder
 
-* $ rake db:create
+$ rake db:create
 
-* $ rake db:migrate
+$ rake db:migrate
 
-* $ ruby app.rb
+$ ruby app.rb
 
-* go to localhost:4567 in your browser to open webapp
+go to localhost:4567 in your browser to open webapp
 
 ## Technologies Used
 
