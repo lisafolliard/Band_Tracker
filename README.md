@@ -1,10 +1,10 @@
-Band Tracker - Code Review
+# Band Tracker
 
-A application to track bands and the venues where they've played, 8/28/2015
+##### A application to track bands and the venues where they've played, 8/28/2015
 
-By Lisa Folliard
+#### By Lisa Folliard
 
-Description
+## Description
 
 Users can:
 
@@ -16,41 +16,34 @@ Users can:
 
   - See all the venues where a band has played on the individual band page
 
-Setup
+## Setup
 
-Clone this repository to your local system
+* Clone this repository to your local system
 
-Utilize ActiveRecord to get database up and running
+* Utilize ActiveRecord to get database up and running
 
-run the following commands in project folder
+* run the following commands in project folder
 
-$ rake db:create
+* $ rake db:create
 
-$ rake db:migrate
+* $ rake db:migrate
 
-$ ruby app.rb
+* $ ruby app.rb
 
-go to localhost:4567 in your browser to open webapp
+* go to localhost:4567 in your browser to open webapp
 
-Technologies Used
+## Technologies Used
 
-  - Ruby
+* Ruby
+* Sinatra
+* RSpec
+* Capybara
+* Postgres
+* HTML
+* CSS
+* Active Record
 
-  - Sinatra
-
-  - RSpec
-
-  - Capybara
-
-  - Postgres
-
-  - HTML
-
-  - CSS
-
-  - Active Record
-
-Legal
+### Legal
 
 Copyright (c) 2015 Lisa Folliard
 
