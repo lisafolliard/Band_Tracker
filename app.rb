@@ -76,3 +76,10 @@ post('/venues') do
     erb(:venue_errors)
   end
 end
+
+get('/venues/:id/delete') do
+  venue = Venue.find(params['id'].to_i)
+  @venues = Venue.all()
+  venue.destroy
+  erb(:venues)
+end

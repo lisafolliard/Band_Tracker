@@ -16,12 +16,15 @@
 <table class="table">
   <tr>
     <th>Venue Name</th>
+    <th>Delete</th>
   </tr>
-    <% if @venues %>
-      <% @venues.each do |venue| %>
-        <tr>
-          <td><%= venue.location %></td>
-        </tr>
-      <% end %>
+
+  <% if @venues %>
+    <% @venues.each do |venue| %>
+      <tr>
+        <td><%= venue.location %></a></td>
+        <td><a href='/venues/<%= venue.id %>/delete'>Delete</a></td>
+      </tr>
     <% end %>
+  <% end %>
 </table>
