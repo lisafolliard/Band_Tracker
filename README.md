@@ -1,6 +1,6 @@
 # Band Tracker
 
-##### A application to track bands and the venues where they've played, 8/28/2015
+##### Version 1.0, 28 August 2015
 
 #### By Lisa Folliard
 
