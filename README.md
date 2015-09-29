@@ -10,7 +10,7 @@ Users can:
 
   - Add, view, edit and delete bands
 
-  - Add venues
+  - Add, view and delete venues
 
   - Add venues to a band
 
