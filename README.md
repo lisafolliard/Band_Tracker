@@ -18,7 +18,7 @@ Users can:
 
 ## Setup
 
-Clone this repository to your local system
+clone this repository to your local system
 
 run the following commands in project folder
 
