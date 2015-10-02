@@ -20,11 +20,7 @@ Users can:
 
 Clone this repository to your local system
 
-Utilize ActiveRecord to get database up and running
-
 run the following commands in project folder
-
-$ rake db:create
 
 $ rake db:migrate
 
