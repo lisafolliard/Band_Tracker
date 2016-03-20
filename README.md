@@ -2,7 +2,7 @@
 
 ##### Version 1.0, 28 August 2015
 
-#### By Lisa Folliard
+#### By _**Lisa Folliard**_
 
 ## Description
 
