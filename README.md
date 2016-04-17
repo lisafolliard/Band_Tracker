@@ -6,9 +6,7 @@
 
 ## Description
 
-Users can:
-
-A simple Ruby application to track bands and the venues where they've played 
+A simple Ruby application to track bands and the venues where they've played
 
 ## Setup
 
