@@ -1,18 +1,57 @@
-.lf-background {
+body {
+  background-color: pink;
   background: url('concert_2.jpg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
 }
 
- h1 {
-   color: red;
-   font-family: 'Amatic SC';
-   text-align: center;
-   font-size: 60px;
- }
+.container {
+  background-color: #ffffff;
+  opacity: 1.0;
+  border-radius: 5px;
+}
+
+.container h4 {
+  font-family: Georgia;
+}
 
 .jumbotron {
-  color: red;
-  font-family: 'Verdana';
+  margin-top: 15px;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: white;
+}
+
+.jumbotron a {
   text-align: center;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  letter-spacing: .5px;
+}
+
+.jumbotron h1 {
+  color: red;
+  font-family: 'Amatic SC';
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+h1, h3, h5, table, label {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+li {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  list-style-type: none;
+}
+
+.table {
+  text-align: left;
+
+}
+
+.btn {
+  background-color: #52bdf9;
+  outline: none;
+  border: none;
 }

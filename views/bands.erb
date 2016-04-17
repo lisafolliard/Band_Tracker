@@ -1,32 +1,27 @@
 <div class="container">
-  <h1>The Bands I Saw</h1>
-
+  <h1>Bands I Saw</h1>
     <form action="/bands" method='post'>
       <div class='form-group'>
-        <label for="name">Add a new band:</label>
+        <label for="name">Band Name</label>
         <input type="text" class='form-control' name="name" placeholder="e.g. The Rockers">
       </div>
-
-      <button type='submit' class='btn btn-primary btn-md'>Add!</button>
+      <button type='submit' class='btn btn-primary btn-md'>Add</button>
     </form>
-</div>
-
 </br>
-
-<table class="table">
-  <tr>
-    <th>Band Name</th>
-    <th>Edit</th>
-    <th>Delete</th>
-  </tr>
-
-  <% if @bands %>
-    <% @bands.each do |band| %>
-      <tr>
-        <td><a href='/bands/<%= band.id %>'><%= band.name %></a></td>
-        <td><a href='/bands/<%= band.id %>/edit'>Edit</a></td>
-        <td><a href='/bands/<%= band.id %>/delete'>Delete</a></td>
-      </tr>
+  <table class="table">
+    <tr>
+      <th>Band Name</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <% if @bands %>
+      <% @bands.each do |band| %>
+        <tr>
+          <td><a href='/bands/<%= band.id %>'><%= band.name %></a></td>
+          <td><a href='/bands/<%= band.id %>/edit'>Edit</a></td>
+          <td><a href='/bands/<%= band.id %>/delete'>Delete</a></td>
+        </tr>
+      <% end %>
     <% end %>
-  <% end %>
-</table>
+  </table>
+</div>

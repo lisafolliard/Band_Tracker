@@ -6,18 +6,20 @@
   <link rel='stylesheet' href='band_tracker.css'>
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
-<div class="navbar navbar-default navbar-static-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a href="/" class="navbar-brand">Band Tracker</a>
-      <a href="/bands" class="navbar-brand">Bands</a>
-      <a href="/venues" class="navbar-brand">Venues</a>
+
+  <body>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">Home</a>
+          <a href="/bands" class="navbar-brand">Bands</a>
+          <a href="/venues" class="navbar-brand">Venues</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="container">
-  <%= yield %>
-</div>
-
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
 </html>
