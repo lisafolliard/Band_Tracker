@@ -8,13 +8,7 @@
 
 Users can:
 
-  - Add, view, edit and delete bands
-
-  - Add, view and delete venues
-
-  - Add venues to a band
-
-  - See all the venues where a band has played on the individual band page
+A simple Ruby application to track bands and the venues where they've played 
 
 ## Setup
 
